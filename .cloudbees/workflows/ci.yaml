@@ -77,6 +77,11 @@ jobs:
           echo "secrets and vulnerabilities."
           echo "Findings appear in the component's Security tab — including the"
           echo "hardcoded credential intentionally added in src/config.py."
+      - name: Scan for secrets with Gitleaks
+        uses: https://github.com/cloudbees-io/gitleaks-plugin@v1
+        continue-on-error: true
+        with:
+          log-level: "info"
       - name: Publish evidence
         uses: https://github.com/cloudbees-io/publish-evidence-item@v1
         with:
