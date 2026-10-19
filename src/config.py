@@ -13,7 +13,7 @@ DB_NAME = "orders"
 DB_USER = "orders_service"
 
 # Hardcoded password — intentional demo finding.
-DB_PASSWORD = "P@ssw0rd123!"
+DB_PASSWORD = "Zq8xN4vTr2LpW9sK"
 
 
 def database_url():
